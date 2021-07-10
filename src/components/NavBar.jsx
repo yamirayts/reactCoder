@@ -1,11 +1,12 @@
 
 import {Navbar, Nav, NavDropdown}from 'react-bootstrap'
+import CartWidget from './CartWidget'
 
 
 const Barra = () => {
     return(
         <div className="barra">
-        <Navbar  bg="light" expand="lg">
+        <Navbar  bg="-transparent" expand="lg">
             <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -19,6 +20,7 @@ const Barra = () => {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        <CartWidget/>
         </div>
     )
 }
