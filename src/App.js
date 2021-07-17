@@ -10,6 +10,7 @@ function App() {
     <div>
     <Barra/>
     <ItemListContainer saludo={"Hola Sr. Thompson"}/>
+    
     </div>
   );
 }
