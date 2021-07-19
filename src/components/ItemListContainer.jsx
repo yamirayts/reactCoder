@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemCount from './ItemCount'
+import ItemList from './ItemList';
 
 const handleCount=(cant)=>{
    
@@ -17,6 +18,7 @@ export default function ItemListContainer({saludo}) {
         </div>
         <div>
             <ItemCount stock={5} initial={1} onAdd={handleCount}/>
+            <ItemList/>
         </div>
         </div>
     )

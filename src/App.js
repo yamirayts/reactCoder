@@ -1,5 +1,6 @@
 
 import  'bootstrap/dist/css/bootstrap.min.css';
+import ItemList from './components/ItemList';
 import ItemListContainer from './components/ItemListContainer';
 import Barra from './components/NavBar';
 
@@ -10,6 +11,7 @@ function App() {
     <div>
     <Barra/>
     <ItemListContainer saludo={"Hola Sr. Thompson"}/>
+    
     
     </div>
   );
