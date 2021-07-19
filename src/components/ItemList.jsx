@@ -11,12 +11,12 @@ export default function ItemList() {
         const promesa = new Promise((resolve,reject)=>{
             setTimeout(()=>{
                 resolve(Api);
-                console.log(Api);
-            },6000) 
+                
+            },2000) 
         });
         promesa.then((result)=>{
             setProductos(result);
-            console.log(result);
+            ;
         })
         
     }, []);

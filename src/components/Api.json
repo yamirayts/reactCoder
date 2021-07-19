@@ -5,7 +5,7 @@
         "stock": 5,
         "precio": 290,
         "caract": "Nuevas e increíbles ICE CREAM BUBBLE TREATS Creamos estas 𝐦𝐚𝐫𝐚𝐯𝐢𝐥𝐥𝐨𝐬𝐚𝐬 aunque no comestibles barras de espuma con ingredientes que nuestra 𝐩𝐢𝐞𝐥 𝐚𝐦𝐚 y necesita Y esa no es la mejor parte! Que su tamaño no te engañe,estás pequeñas bochas son 𝐬𝐮𝐦𝐚𝐦𝐞𝐧𝐭𝐞 concentradas,con notas cítricas y un toque de deliciosa 𝐦𝐚𝐧𝐭𝐞𝐜𝐚 de cacao para crear el baño de espuma perfecto y súper 𝐡𝐢𝐝𝐫𝐚𝐭𝐚𝐧𝐭𝐞 ",
-        "img": "/static/media/espuma.01c47115.jpg "
+        "img": "/src/img/espuma.jpg"
 
     },
 
@@ -15,7 +15,7 @@
         "stock": 10,
         "precio": 300,
         "caract": "Píldoras relajantes para disfrutar al máximo la hora del baño,elaboradas con aceite esencial de lavanda y aceite de coco orgánico ",
-        "img": "/static/media/pill.9e8d4d02.jpg"
+        "img": "/src/img/pill.jpg"
 
     },
 
@@ -25,7 +25,7 @@
         "stock": 20,
         "precio": 300,
         "caract": "lega San Valentín y no podíamos dejar de hacer una Bath Bomb en su honor! Pero no es cualquier Bath Bomb, creamos un súper beso de Piña Colada que además tiene miles de brillitos multicolor (dorado/plateado/aqua)  ",
-        "img": "/static/media/boca.bc891cf7.jpg "
+        "img": "/src/img/boca.jpg "
 
     }
     
