@@ -5,7 +5,7 @@ import Api from "./Api.json"
 
 export default function ItemList() {
     const [productos, setProductos] = useState([]);
-  
+  console.log(Api)
     useEffect(() => {
 
         const promesa = new Promise((resolve,reject)=>{
