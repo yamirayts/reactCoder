@@ -3,8 +3,9 @@ import Item from './Item'
 import Api from "./Api.json"
 
 
-export default function ItemList() {
+export default function ItemList({categoria}) {
     const [productos, setProductos] = useState([]);
+      
   console.log(Api)
     useEffect(() => {
 
@@ -14,12 +15,8 @@ export default function ItemList() {
                 
             },2000) 
         });
-        promesa.then((result)=>{
-            setProductos(result);
-            ;
-        })
-        
-    }, []);
+        promesa.then((resp)=>setProductos(resp.filter(it=>it.categoria===categoria)))
+    }, [categoria])
 
     
     

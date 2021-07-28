@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react'
-import getItem from './getItem'
+
 import ItemDetail from './ItemDetail'
+import { useParams } from 'react-router';
+import Api from "./Api.json"
 
 export default function ItemDetailContainer() {
-const [items, setItems] = useState([])
-   useEffect(() => {
-       getItem()
-       .then(resp => setItems(resp))
-   }, [])
+
+const {itemId} = useParams();
+
 
     return (
         <div>
-            <ItemDetail item={items}/>
+            <ItemDetail  item={Api} itemId={itemId}/>
         </div>
     )
 }

@@ -1,11 +1,33 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
 
-export default function ItemDetail({item}) {
+
+export default function ItemDetail({item, itemId}) {
+  const [detail, setDetail] = useState([]);
+const id = ("/"+itemId)
+console.log(itemId)
+console.log(item)
+console.log(id)
+console.log(detail)
+
+
+  useEffect(() => {
+
+      const prom = new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+              resolve(item);
+              
+          },2000) 
+      });
+      prom.then((resp)=>setDetail(resp.filter(it=>it.id===id)))
+  }, [itemId])
+
+  
     return (
+     
         <div>
-            {item.map(p=> {
+            {detail.map(p=> {
                   const imgD = p.img ? require(`../img/${p.img}`).default : ''
-                  console.log(imgD)
+                  
                   return (
                     <div className="datailContainer" key={p.id}>
                         <img src={imgD} className="imgCard card-img-top imgDetail"/>
@@ -18,5 +40,6 @@ export default function ItemDetail({item}) {
                   )
                 })}
         </div>
+        
     )
 }

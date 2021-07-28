@@ -1,6 +1,7 @@
 [
     {
-        "id": 1,
+        "id": "/BombIce",
+        "categoria": "bombs",
         "nombre": "ICE CREAM BUBBLE TREAT",
         "stock": 5,
         "precio": 290,
@@ -10,7 +11,8 @@
     },
 
     {
-        "id": 2,
+        "id": "/BombPill",
+        "categoria": "bombs",
         "nombre": "CHILL PILL BATH BOMB",
         "stock": 10,
         "precio": 300,
@@ -20,7 +22,19 @@
     },
 
     {
-        "id": 3,
+        "id": "/BombBite",
+        "categoria": "bombs",
+        "nombre": "BITE ME BATH BOMB",
+        "stock": 20,
+        "precio": 300,
+        "caract": "lega San Valentín y no podíamos dejar de hacer una Bath Bomb en su honor! Pero no es cualquier Bath Bomb, creamos un súper beso de Piña Colada que además tiene miles de brillitos multicolor (dorado/plateado/aqua)  ",
+        "img": "boca.jpg"
+
+    },
+
+    {
+        "id": "/BombBite",
+        "categoria": "Accesorios",
         "nombre": "BITE ME BATH BOMB",
         "stock": 20,
         "precio": 300,

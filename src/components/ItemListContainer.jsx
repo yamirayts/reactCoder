@@ -1,6 +1,9 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 import ItemList from './ItemList';
+import { useParams } from 'react-router';
+
+
 
 const handleCount=(cant)=>{
    
@@ -10,16 +13,14 @@ const handleCount=(cant)=>{
 }
 
 export default function ItemListContainer({saludo}) {
+    const {categoryId} = useParams();
     
     return (
-        <div>
-        <div className="itemList">
-            <h2>{saludo}</h2>
-        </div>
+        
         <div>
             <ItemCount stock={5} initial={1} onAdd={handleCount}/>
-            <ItemList/>
+            <ItemList categoria={categoryId}/>
         </div>
-        </div>
+        
     )
 }

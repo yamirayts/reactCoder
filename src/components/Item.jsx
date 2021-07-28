@@ -1,4 +1,9 @@
+import {useState} from "react"
+import { Link } from 'react-router-dom';
+
 export default function Item({api}) {
+  const [isShown, setIsShown] = useState(false)
+ 
     return (
         <div className="container">
             <div className="row align-items-start ">
@@ -7,12 +12,18 @@ export default function Item({api}) {
                   console.log(img)
                   return (
                     <div className="col" key={p.id}>
-                        <img src={img} className="imgCard card-img-top"/>
-                        <div className="card-body">
-                          <h5 className="card-title">{p.nombre}</h5>
-                          <p className="card-text">{p.caract}</p>
-                          <a className="btn btn-primary">Agregar a carrito</a>
-                        </div>
+                       <Link to={p.id}> <button
+                        onMouseEnter={()=> setIsShown(true)}
+                        onMouseLeave={()=> setIsShown(false)}>
+                         <img src={img} className="imgCard card-img-top"/>
+                         </button>
+                         </Link>
+                         {isShown &&(
+                           <div className="card-body">
+                           <h5 className="card-title">{p.precio}</h5>
+                         </div>
+                         )}
+                        
                     </div>
                   )
                 })}
