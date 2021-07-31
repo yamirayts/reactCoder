@@ -1,14 +1,21 @@
 import React, {useState, useEffect} from 'react';
+import ItemCount from './ItemCount'
 
 
 export default function ItemDetail({item, itemId}) {
   const [detail, setDetail] = useState([]);
+  const [count, setCount] = useState()
 const id = ("/"+itemId)
-console.log(itemId)
-console.log(item)
-console.log(id)
-console.log(detail)
 
+  const handleCount=(cant)=>{
+   setCount(cant)
+   console.log(cant)
+  
+ 
+   
+
+
+}
 
   useEffect(() => {
 
@@ -29,6 +36,7 @@ console.log(detail)
                   const imgD = p.img ? require(`../img/${p.img}`).default : ''
                   
                   return (
+                    <div>
                     <div className="datailContainer" key={p.id}>
                         <img src={imgD} className="imgCard card-img-top imgDetail"/>
                         <div className="detailBody">
@@ -37,9 +45,15 @@ console.log(detail)
                           <a className="btn btn-primary detailAgregar">Agregar a carrito</a>
                         </div>
                     </div>
+                    <div className="itemCount">
+                    <ItemCount id={p.id} stock={p.stock} initial={1} onAdd={handleCount}/>
+                    </div>
+                                       
+                    </div>
                   )
                 })}
         </div>
         
+    
     )
 }
