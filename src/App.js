@@ -6,12 +6,15 @@ import ItemListContainer from './components/ItemListContainer';
 import Barra from './components/NavBar';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Carrusel from './components/Carrusel';
+import CartContextProvide from './components/context/CartContext';
 
 function App() {
   
  
   return (
+    <CartContextProvide>
     <Router>
+     
       <Barra/>
       <Switch>
       
@@ -26,14 +29,16 @@ function App() {
         <ItemListContainer saludo={"Hola Sr. Thompson"}/>
       </Route>
       <Route exact path="/:itemId">
-        <ItemDetailContainer/>
+        <ItemDetailContainer/> 
       </Route>
 
       
     
       
     </Switch>
+    
     </Router>
+    </CartContextProvide>
   );
 }
 

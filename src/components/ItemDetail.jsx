@@ -1,22 +1,36 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import ItemCount from './ItemCount'
+import {CartContext} from "./context/CartContext"
 
 
 export default function ItemDetail({item, itemId}) {
   const [detail, setDetail] = useState([]);
-  const [count, setCount] = useState()
+  const {cart, setCart, } = useContext(CartContext)
 const id = ("/"+itemId)
 
+
+
   const handleCount=(cant)=>{
-   setCount(cant)
-   console.log(cant)
+    const newCart = [...cart];
+    //Buscar si existe en el cart
+    const isInCart = newCart.find(prod => prod.id === id);
   
- 
-   
-
-
+    if (isInCart) {
+      newCart[newCart.findIndex(prod => prod.id === id)].cantidad += cant;
+      setCart([...newCart]);
+      return;
+    }
+  detail.cantidad = cant;  
+  setCart([...newCart, detail])
 }
+  
+  
+  
+  
 
+
+
+console.log(cart)
   useEffect(() => {
 
       const prom = new Promise((resolve,reject)=>{
