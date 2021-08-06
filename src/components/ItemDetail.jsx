@@ -5,23 +5,14 @@ import {CartContext} from "./context/CartContext"
 
 export default function ItemDetail({item, itemId}) {
   const [detail, setDetail] = useState([]);
-  const {cart, setCart, } = useContext(CartContext)
+  const {cart, guardarCart } = useContext(CartContext)
 const id = ("/"+itemId)
 
 
 
   const handleCount=(cant)=>{
-    const newCart = [...cart];
-    //Buscar si existe en el cart
-    const isInCart = newCart.find(prod => prod.id === id);
-  
-    if (isInCart) {
-      newCart[newCart.findIndex(prod => prod.id === id)].cantidad += cant;
-      setCart([...newCart]);
-      return;
-    }
-  detail.cantidad = cant;  
-  setCart([...newCart, detail])
+   
+    guardarCart({item: detail[0], cantidad: cant})
 }
   
   

@@ -52,8 +52,8 @@ const [compra, setCompra] = useState(true)
                             >Agregar a carrito</button>
                          )}
                 {compra===false &&(
-                           <Link to="/card"> <button className="btn btn-primary btn-block"                           
-                           >Terminar compra</button></Link>
+                           <Link to={"/cart"} className="btn btn-primary btn-block"                           
+                           >Terminar compra</Link>
                          )}
                 
 

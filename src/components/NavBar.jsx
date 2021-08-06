@@ -15,12 +15,12 @@ const Barra = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link href="#home"> <Link to={"/"}>Home</Link></Nav.Link>
+                <Nav.Link > <Link to={"/"}>Home</Link></Nav.Link>
                 <NavDropdown title="Productos" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1"><Link to={"/productos/bombs"}>Bombs</Link></NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2"><Link to={"/productos/Accesorios"}>Accesorios</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to={"/productos/bombs"}>Bombs</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to={"/productos/Accesorios"}>Accesorios</Link></NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#link">Contacto</Nav.Link>
+                <Nav.Link >Contacto</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
