@@ -7,7 +7,7 @@ import Barra from './components/NavBar';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Carrusel from './components/Carrusel';
 import CartContextProvide from './components/context/CartContext';
-import Cart from './components/Cart';
+import CartList from './components/CartList';
 
 function App() {
   
@@ -23,24 +23,27 @@ function App() {
 
       <Route exact path="/">
         <Carrusel/>
-        <Cart/>
+        
       </Route>
 
+      
       <Route exact path="/productos/:categoryId">
       <ItemListContainer/>
       </Route>
+
+
 
       <Route exact path="/Contacto">
         <ItemListContainer saludo={"Hola Sr. Thompson"}/>
       </Route>
 
-      <Route exact path="/:itemId">
+      <Route exact path="/items/:itemId">
         <ItemDetailContainer/> 
         
       </Route>
 
       <Route exact path="/cart">
-        <Cart/>
+      <CartList/>
       </Route>
       
     

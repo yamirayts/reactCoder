@@ -31,32 +31,31 @@ const [compra, setCompra] = useState(true)
     }}
     return (
         <>
-            <div className="card text-center w-50">
-                <div className="card-header">
-                    <h4>ItemCount</h4>
-                </div>
-                <div className="card-body">
-                <button onClick={handleRemove}>
+            <div className="card text-center w-70 col align-self-end">
+                
+                <div className="card-body col ">
+                <button className="btn btn-warning btn-count" onClick={handleRemove}>
                     -
                 </button>
-                <label className="alert alert-white">{cantidad}</label>
-                <button onClick={handle}>
+                <label className="alert alert-white ">{cantidad}</label>
+                <button className="btn btn-success btn-count" onClick={handle}>
                     +
                 </button>
                 
                 </div>
+                <div className="">
                 {compra===true &&(
-                            <button className="btn btn-primary btn-block"
+                            <button className="btn btn-secondary"
                             onClick={handleOnAdd}
                             
                             >Agregar a carrito</button>
                          )}
                 {compra===false &&(
-                           <Link to={"/cart"} className="btn btn-primary btn-block"                           
+                           <Link to={"/cart"} className="btn btn-info"                           
                            >Terminar compra</Link>
                          )}
                 
-
+                </div>
             </div>
         </>
     )

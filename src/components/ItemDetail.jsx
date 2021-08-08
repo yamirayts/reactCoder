@@ -41,18 +41,21 @@ console.log(cart)
                   const imgD = p.img ? require(`../img/${p.img}`).default : ''
                   
                   return (
-                    <div>
-                    <div className="datailContainer" key={p.id}>
-                        <img src={imgD} className="imgCard card-img-top imgDetail"/>
-                        <div className="detailBody">
-                          <h5 className="detailNombre">{p.nombre}</h5>
-                          <p className="detailCaracteristica">{p.caract}</p>
-                          <a className="btn btn-primary detailAgregar">Agregar a carrito</a>
-                        </div>
-                    </div>
-                    <div className="itemCount">
-                    <ItemCount id={p.id} stock={p.stock} initial={1} onAdd={handleCount}/>
-                    </div>
+                    <div className= "container px-4">
+                      <div className="row gx-5" key={p.id}>
+                        <div className= "col">
+                          <div className="p-3 border bg-light">
+                            <img src={imgD} className=" card-img-top imgDetail "/>
+                        
+                        
+                          </div>   
+                         </div>
+                        <div className="col align-self-center   border bg-light">
+                          <h5 className="detailNombre row">{p.nombre}</h5>
+                          <p className="detailCaracteristica row">{p.caract}</p>
+                           <ItemCount className= "p-3 border bg-light " id={p.id} stock={p.stock} initial={1} onAdd={handleCount}/>
+                         </div>
+                      </div>
                                        
                     </div>
                   )
