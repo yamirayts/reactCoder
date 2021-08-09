@@ -12,37 +12,23 @@ const id = ("/"+itemId)
 
   const handleCount=(cant)=>{
    
-    guardarCart({item: detail[0], cantidad: cant})
+    guardarCart({item: item, cantidad: cant})
 }
   
   
   
   
+const imgD = item.img ? require(`../img/${item.img}`).default : ''
 
 
-
-console.log(cart)
-  useEffect(() => {
-
-      const prom = new Promise((resolve,reject)=>{
-          setTimeout(()=>{
-              resolve(item);
-              
-          },2000) 
-      });
-      prom.then((resp)=>setDetail(resp.filter(it=>it.id===id)))
-  }, [itemId])
 
   
     return (
      
         <div>
-            {detail.map(p=> {
-                  const imgD = p.img ? require(`../img/${p.img}`).default : ''
-                  
-                  return (
+           
                     <div className= "container px-4">
-                      <div className="row gx-5" key={p.id}>
+                      <div className="row gx-5" key={item.id}>
                         <div className= "col">
                           <div className="p-3 border bg-light">
                             <img src={imgD} className=" card-img-top imgDetail "/>
@@ -51,15 +37,15 @@ console.log(cart)
                           </div>   
                          </div>
                         <div className="col align-self-center   border bg-light">
-                          <h5 className="detailNombre row">{p.nombre}</h5>
-                          <p className="detailCaracteristica row">{p.caract}</p>
-                           <ItemCount className= "p-3 border bg-light " id={p.id} stock={p.stock} initial={1} onAdd={handleCount}/>
+                          <h5 className="detailNombre row">{item.nombre}</h5>
+                          <p className="detailCaracteristica row">{item.caract}</p>
+                           <ItemCount className= "p-3 border bg-light " id={item.id} stock={item.stock} initial={1} onAdd={handleCount}/>
                          </div>
                       </div>
                                        
                     </div>
                   )
-                })}
+                
         </div>
         
     

@@ -12,7 +12,7 @@ export default function Item({api}) {
                   console.log(img)
                   return (
                     <div className="col" key={p.id}>
-                       <Link to={`/items${p.id}`}> <button className="btn btn-outline-warning"
+                       <Link to={`/items/${p.id}`}> <button className="btn btn-outline-warning"
                         onMouseEnter={()=> setIsShown(true)}
                         onMouseLeave={()=> setIsShown(false)}>
                          <img src={img} className="imgCard card-img-top"/>
