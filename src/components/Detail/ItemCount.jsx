@@ -24,7 +24,7 @@ const [compra, setCompra] = useState(true)
 
     const handleOnAdd=()=>{
         if (stock === 0) {
-            console.log("No hay suficiente stock");
+           
         }else{
         onAdd(cantidad)
         setCompra(false)
@@ -34,12 +34,12 @@ const [compra, setCompra] = useState(true)
             <div className="card text-center w-70 col align-self-end">
                 
                 <div className="card-body col ">
-                <button className="btn btn-warning btn-count" onClick={handleRemove}>
-                    -
+                <button className="btn" onClick={handleRemove}>
+                <img alt="" src="https://img.icons8.com/color-glass/40/000000/minus.png"/>
                 </button>
                 <label className="alert alert-white ">{cantidad}</label>
-                <button className="btn btn-success btn-count" onClick={handle}>
-                    +
+                <button className="btn" onClick={handle}>
+                <img alt="" src="https://img.icons8.com/office/40/000000/plus.png"/>
                 </button>
                 
                 </div>
@@ -51,7 +51,7 @@ const [compra, setCompra] = useState(true)
                             >Agregar a carrito</button>
                          )}
                 {compra===false &&(
-                           <Link to={"/cart"} className="btn btn-info"                           
+                           <Link to={"/cart"} className="btn btn-warning"                           
                            >Terminar compra</Link>
                          )}
                 

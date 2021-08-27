@@ -1,57 +1,62 @@
 
 import  'bootstrap/dist/css/bootstrap.min.css';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import ItemList from './components/ItemList';
-import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/Detail/ItemDetailContainer';
+import ItemListContainer from './components/List/ItemListContainer';
 import Barra from './components/NavBar';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Carrusel from './components/Carrusel';
 import CartContextProvide from './components/context/CartContext';
 import CartList from './components/CartList';
+import Contacto from './components/Contacto';
+import CarruselProd from './components/CarruselProd';
 
 function App() {
   
- 
-  return (
+ return (
     <CartContextProvide>
-    <Router>
+
+      <Router>
     
-      <Barra/>
+        <Barra/>
     
-      <Switch>
+        <Switch>
       
 
-      <Route exact path="/">
-        <Carrusel/>
-        
-      </Route>
+            <Route exact path="/">
+              <Carrusel/>
+              <CarruselProd/>
+            </Route>
 
       
-      <Route exact path="/productos/:categoryId">
-      <ItemListContainer/>
-      </Route>
+            <Route exact path="/productos/:categoryId">
+            <ItemListContainer/>
+            </Route>
 
 
 
-      <Route exact path="/Contacto">
-        <ItemListContainer saludo={"Hola Sr. Thompson"}/>
-      </Route>
+            <Route exact path="/Contacto">
+              <Contacto/>
+            </Route>
 
-      <Route exact path="/items/:itemId">
-        <ItemDetailContainer/> 
-        
-      </Route>
 
-      <Route exact path="/cart">
-      <CartList/>
-      </Route>
+            <Route exact path="/items/:itemId">
+              <ItemDetailContainer/> 
+              
+            </Route>
+
+
+            <Route exact path="/cart">
+            <CartList/>
+            </Route>
       
     
       
-    </Switch>
-    
-    </Router>
+        </Switch>
+          <h6 className="pie">Todos los derechos reservados</h6>
+      </Router>
+
     </CartContextProvide>
+    
   );
 }
 

@@ -4,6 +4,7 @@ import "firebase/firestore"
 
 
 // Your web app's Firebase configuration
+
  const firebaseConfig = {
     apiKey: "AIzaSyAsVblGGa2nhF7K-pM5Q-_RLAo1wnMsGFI",
     authDomain: "reactcoderhouserayts.firebaseapp.com",
@@ -12,13 +13,18 @@ import "firebase/firestore"
     messagingSenderId: "868881496193",
     appId: "1:868881496193:web:23e750588e283ce9ad3580"
   };
-  // Initialize Firebase
+// Initialize Firebase
+
   const app = firebase.initializeApp(firebaseConfig);
 
   export function getFirenase(){
+
       return(app)
+
   }
 
   export function getFirestore(){
+
       return firebase.firestore(app)
+      
   }

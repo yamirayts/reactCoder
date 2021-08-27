@@ -9,7 +9,7 @@ export default function CartContextProvide({children}) {
  function guardarCart(newCart){
 
     setCart([...cart, newCart])
-    console.log(newCart)
+   
    const idx = cart.findIndex(c=>newCart.item.id === c.item.id)
 
    if (idx === -1) {
@@ -22,7 +22,7 @@ export default function CartContextProvide({children}) {
     setCart([...oldList, newCart])
 
    }
-   console.log(cart)
+   
  }
  const removeItem = (ItemRemov) =>{
  
