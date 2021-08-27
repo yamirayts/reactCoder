@@ -56,7 +56,7 @@ function handlerSumit(evt){
                     <h4 className="col-2">Precio</h4>
                     <h4 className="col-2">Cantidad</h4>
                     <h4 className="col-1">Total parcial</h4>
-                    <h4 className="col-2">Eliminar</h4>
+                    <h4 className="col-2">Quitar</h4>
                 </div>
             {cart.map(item=>{
             const img = item.item.img ? require(`../img/${item.item.img}`).default : ''
