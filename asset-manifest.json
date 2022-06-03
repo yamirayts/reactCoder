@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/reactCoder/static/css/main.c305c1a0.chunk.css",
+    "main.js": "/reactCoder/static/js/main.11713572.chunk.js",
+    "main.js.map": "/reactCoder/static/js/main.11713572.chunk.js.map",
+    "runtime-main.js": "/reactCoder/static/js/runtime-main.e1ebec42.js",
+    "runtime-main.js.map": "/reactCoder/static/js/runtime-main.e1ebec42.js.map",
+    "static/css/2.d45d6843.chunk.css": "/reactCoder/static/css/2.d45d6843.chunk.css",
+    "static/js/2.b2d4a818.chunk.js": "/reactCoder/static/js/2.b2d4a818.chunk.js",
+    "static/js/2.b2d4a818.chunk.js.map": "/reactCoder/static/js/2.b2d4a818.chunk.js.map",
+    "static/js/3.e58e0d86.chunk.js": "/reactCoder/static/js/3.e58e0d86.chunk.js",
+    "static/js/3.e58e0d86.chunk.js.map": "/reactCoder/static/js/3.e58e0d86.chunk.js.map",
+    "index.html": "/reactCoder/index.html",
+    "static/css/2.d45d6843.chunk.css.map": "/reactCoder/static/css/2.d45d6843.chunk.css.map",
+    "static/css/main.c305c1a0.chunk.css.map": "/reactCoder/static/css/main.c305c1a0.chunk.css.map",
+    "static/js/2.b2d4a818.chunk.js.LICENSE.txt": "/reactCoder/static/js/2.b2d4a818.chunk.js.LICENSE.txt",
+    "static/media/boca.jpg": "/reactCoder/static/media/boca.bc891cf7.jpg",
+    "static/media/espuma.jpg": "/reactCoder/static/media/espuma.01c47115.jpg",
+    "static/media/gelatina.jpg": "/reactCoder/static/media/gelatina.83c2bc3c.jpg",
+    "static/media/kit.jpg": "/reactCoder/static/media/kit.85044b98.jpg",
+    "static/media/logo.jpg": "/reactCoder/static/media/logo.4e3f35e6.jpg",
+    "static/media/miss.jpg": "/reactCoder/static/media/miss.048b7548.jpg",
+    "static/media/pastel.jpg": "/reactCoder/static/media/pastel.de823990.jpg",
+    "static/media/pexels-marta-dzedyshko-7175333.jpg": "/reactCoder/static/media/pexels-marta-dzedyshko-7175333.85f413db.jpg",
+    "static/media/pill.jpg": "/reactCoder/static/media/pill.9e8d4d02.jpg",
+    "static/media/portada.jpg": "/reactCoder/static/media/portada.88909a7d.jpg",
+    "static/media/portada1.jpg": "/reactCoder/static/media/portada1.16f87aae.jpg",
+    "static/media/portada2.jpg": "/reactCoder/static/media/portada2.c864fb3c.jpg",
+    "static/media/puente.jpg": "/reactCoder/static/media/puente.0ac4e55f.jpg",
+    "static/media/st,small,507x507-pad,600x600,f8f8f8.jpg": "/reactCoder/static/media/st,small,507x507-pad,600x600,f8f8f8.9e2828ee.jpg",
+    "static/media/unicornio.jpg": "/reactCoder/static/media/unicornio.471cfcb3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1ebec42.js",
+    "static/css/2.d45d6843.chunk.css",
+    "static/js/2.b2d4a818.chunk.js",
+    "static/css/main.c305c1a0.chunk.css",
+    "static/js/main.11713572.chunk.js"
+  ]
+}
